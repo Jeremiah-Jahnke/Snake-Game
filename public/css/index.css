@@ -1,0 +1,77 @@
+:root {
+    --color-primary: #0F111A;
+    --color-secondary: #181b29;
+    --color-text-primary: #9DA1B0;
+    --color-accent: #8290c4;
+    --color-accent-hover: #6e7aa6;
+    --color-text-secondary: #60667a;
+    --color-text-thirdary: #2e303a;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-border: #9DA1B0;
+    --color-warning: #ffc107;
+    --color-info: #17a2b8;
+    --color-yes: #28a745;
+    --color-no: #dc3545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-primary);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-primary);
+}
+
+canvas {
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    border: var(--color-border) 1px solid;
+    box-shadow: var(--color-shadow) 0 0 10px;
+    background-color: var(--color-secondary);
+}
+
+.Score {
+    left: 5rem;
+    padding: 4rem;
+    font-size: 2rem;
+    position: absolute;
+    border-radius: 0.5rem;
+    color: var(--color-text-primary);
+    border: var(--color-border) 1px solid;
+    background-color: var(--color-secondary);
+}
+
+.Score h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.Keybinds {
+    right: 5rem;
+    padding: 4rem;
+    font-size: 2rem;
+    position: absolute;
+    border-radius: 0.5rem;
+    color: var(--color-text-primary);
+    border: var(--color-border) 1px solid;
+    background-color: var(--color-secondary);
+}
+
+.Keybinds h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.Keybinds h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
